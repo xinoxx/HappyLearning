@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/choose_img_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/back"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#696969"
+        android:layout_marginTop="15dp"/>
+
+    <!--标题要设置滚屏-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:text="标题"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--也许需要滚屏-->
+        <LinearLayout
+            android:id="@+id/choose_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/choose1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_border">
+
+                <ImageView
+                    android:id="@+id/chooseA"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/a_default"/>
+
+                <TextView
+                    android:id="@+id/chooseText1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:layout_margin="10dp"
+                    android:text="选项1"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/choose2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_border">
+
+                <ImageView
+                    android:id="@+id/chooseB"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/b_default"/>
+
+                <TextView
+                    android:id="@+id/chooseText2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:layout_margin="10dp"
+                    android:text="选项2"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/choose3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_border">
+
+                <ImageView
+                    android:id="@+id/chooseC"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/c_default"/>
+
+                <TextView
+                    android:id="@+id/chooseText3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:layout_margin="10dp"
+                    android:text="选项3"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/choose4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_border">
+
+                <ImageView
+                    android:id="@+id/chooseD"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/d_default"/>
+
+                <TextView
+                    android:id="@+id/chooseText4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:layout_margin="10dp"
+                    android:text="选项4"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="110dp"
+                android:background="@drawable/btn_selector"
+                android:text="提交答案"
+                android:textSize="20sp"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

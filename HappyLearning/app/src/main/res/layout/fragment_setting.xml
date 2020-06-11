@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="(◍•ᴗ•◍)"
+        android:textSize="40sp"
+        android:textColor="@color/colorText"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="用户名的个人空间"
+        android:textSize="30sp"
+        android:textColor="@color/colorText"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="新功能开发中..."
+            android:textColor="@color/colorText"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="@drawable/shape_border"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="退出"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/exit_btn_selector"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

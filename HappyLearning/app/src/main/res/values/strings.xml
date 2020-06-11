@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HappyLearning</string>
+    <string name="happylearning">进入HappyLearning</string>
+    <string name="btn_login">登录</string>
+    <string name="login_pwd">密码</string>
+    <string name="login_uid">用户名</string>
+    <string name="main">主页</string>
+    <string name="setting">设置</string>
+    <string name="num">版本0.0.1</string>
+</resources>

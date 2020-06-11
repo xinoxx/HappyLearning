@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <!--
+        Design包提供的控件：TabLayout
+        tabIndicatorColor:菜单下方移动的横线的颜色
+        tabSelectedTextColor:菜单被选中之后的颜色
+        tabTextColor:菜单正常时的颜色
+        tabTextAppearance:添加样式
+        app:tabBackground&app:tabRippleColor:点击后阴影效果
+    -->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/top_tab"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabSelectedTextColor="@color/colorTextLight"
+        app:tabTextColor="@color/colorText"
+        app:tabMode="scrollable"
+        app:tabBackground="@android:color/transparent"
+        app:tabRippleColor="@android:color/transparent">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorTextLight"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:layout_margin="8dp"
+            android:src="@drawable/search"/>
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="8dp"
+            android:layout_weight="5"
+            android:hint="请输入搜索问题"
+            android:background="@drawable/shape_border"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="搜索"
+            android:background="@color/colorDefaultBtn"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorTextLight"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</LinearLayout>
